@@ -40,6 +40,11 @@ header {
 .marginbottom-30 {
   margin-bottom: 30px;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*Top section*/
 .top-section {
   padding: 0 20px;
@@ -70,6 +75,9 @@ header {
   font-weight: bold;
   font-size: 23px;
 }
+h1 {
+  font-family: sans-serif;
+}
 /*Bottom section*/
 .bottom-section {
   background-color: royalblue;
@@ -77,7 +85,7 @@ header {
 .first-block {
   background-color: skyblue;
   padding: 0 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .second-block {
   background-color: skyblue;
@@ -85,27 +93,50 @@ header {
   float: left;
   width: 25%;
 }
+.second-block-image {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border-color: rgb(221, 221, 221);
+}
 .third-block {
   background-color: skyblue;
   margin-right: 20px;
   float: left;
   width: calc(100% - 40px - 50%);
 }
+.third-block-image {
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/banner-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border-color: rgb(221, 221, 221);
+}
+
 .fourth-block {
   background-color: skyblue;
   width: 25%;
   float: right;
   margin-bottom: 10px;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.fourth-block-image {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border-color: rgb(221, 221, 221);
 }
 
 /*Footer*/
 footer {
   margin-top: 10px;
-  background-color: purple;
   padding: 0 20px;
+  text-align: center;
 }
