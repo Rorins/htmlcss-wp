@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 10px auto;
+  width: 80%;
+}
+header {
+  padding: 0 20px;
+}
+
+.brand img {
+  width: 165px;
+  margin-bottom: 20px;
+}
+.main-menu li {
+  margin-right: 6px;
+  display: inline-block;
+  list-style: none;
+  color: #868686;
+  text-decoration: none;
+}
+/*Utilities*/
+.debug-box {
+  height: 30px;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.marginbottom-30 {
+  margin-bottom: 30px;
+}
+/*Top section*/
+.top-section {
+  background-color: gold;
+  padding: 0 20px;
+}
+/*bottom section*/
+.bottom-section {
+  background-color: royalblue;
+}
+.first-block {
+  background-color: skyblue;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.second-block {
+  background-color: skyblue;
+  margin-right: 20px;
+  float: left;
+  width: 25%;
+}
+.third-block {
+  background-color: skyblue;
+  margin-right: 20px;
+  float: left;
+  width: calc(100% - 40px - 50%);
+}
+.fourth-block {
+  background-color: skyblue;
+  width: 25%;
+  float: right;
+  margin-bottom: 10px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*footer*/
+footer {
+  margin-top: 10px;
+  background-color: purple;
+  padding: 0 20px;
+}
