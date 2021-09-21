@@ -31,12 +31,16 @@ header {
   text-transform: uppercase;
 }
 /*Utilities*/
+.mb40 {
+  margin-bottom: 50px;
+}
 .debug-box {
   height: 30px;
-  border: 1px solid gray;
-  background-color: rgba(0, 0, 0, 0.2);
 }
-
+.px10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .marginbottom-30 {
   margin-bottom: 30px;
 }
@@ -79,64 +83,42 @@ header {
 h1 {
   font-family: sans-serif;
 }
-/*Bottom section*/
-.bottom-section {
-  background-color: royalblue;
-}
-.first-block {
-  background-color: skyblue;
-  padding: 0 20px;
-  margin-bottom: 30px;
-}
-.second-block {
-  background-color: skyblue;
-  margin-right: 20px;
-  float: left;
-  width: 25%;
-  height: 300px;
-}
-.second-block-image {
-  height: 300px;
-  background-size: 100%;
-  background-image: url(../img/img-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  border-color: rgb(221, 221, 221);
-}
-.third-block {
-  background-color: skyblue;
-  margin-right: 20px;
-  float: left;
-  width: calc(100% - 40px - 50%);
-  height: 300px;
-}
-.third-block-image {
-  height: 100%;
-  background-size: 100%;
-  background-image: url(../img/banner-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  border-color: rgb(221, 221, 221);
-}
+/*Column section*/
 
-.fourth-block {
-  background-color: skyblue;
-  width: 25%;
-  float: right;
+.columns-heading {
+  margin-bottom: 20px;
+}
+.columns .col {
+  float: left;
+  width: 20%;
+}
+.columns .col:nth-child(2) {
+  width: 60%;
+}
+.overlay-image {
+  height: 205px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.overlay-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.overlay-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.columns-title {
+  font-weight: 400;
   margin-bottom: 10px;
 }
-.fourth-block-image {
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/img-3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  border-color: rgb(221, 221, 221);
-}
-
 /*Footer*/
 footer div {
   margin-top: 20px;
